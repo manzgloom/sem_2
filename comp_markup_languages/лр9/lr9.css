@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.top {
+    background-color: #28293E;
+}
+header {
+    padding: 16px 0;
+}
+.flex_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_header div {
+    display: flex;
+    align-items: center;
+}
+.ul_header {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 6.5em;
+}
+.pentagon {
+    width: 48px;
+    height: 48px;
+    margin-right: 14px;
+}
+.h4_white {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+button {
+    background: #28293E;
+    border: 1px solid #FFFFFF4B;
+    border-radius: 5px;
+    font-family: Epilogue;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14.35px;
+    text-align: center;
+    color: white;
+    padding: 18px 35.54px 16px 34.46px;
+    text-transform: uppercase;
+}
+h1 {
+    font-family: Epilogue;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: -2px;
+    text-align: center;
+    color: white;
+    padding-bottom: 0.4em;
+}
+h1+p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFFA3;
+}
+.top section {
+    padding: 3.7em 27em;
+}
+.second {
+    padding-top: 76px;
+    padding-bottom: 128px;
+}
+h5 {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #EF6D58;
+    text-transform: uppercase;
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+h2 {
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #391400;
+    padding-right: 128px;
+    padding-top: 83px;
+}
+.grid1 p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #391400A3;
+    padding-top: 34px;
+}
+.grid2 {
+    display: grid;
+    margin-top: 127px;
+    margin-bottom: 192px;
+    row-gap: 32px;
+    column-gap: 30px;
+    grid-template-areas: 
+    "video video img1 img2"
+    "video video img3 img4";
+}
+.video {
+    grid-area: video;
+}
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+.grid3 {
+    display: grid;
+    grid-template-columns: 500px repeat(2,1fr);
+}
+.grid3 div h5{
+    margin-bottom: 30px;
+}
+.grid3 div:first-child {
+    margin-right: 130px;
+}
+.p_first {
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #391400;
+    margin-bottom: 12px;
+}
+.p_second {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #391400A3;   
+}
+.grid3 div:nth-child(2) h4 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #391400;    
+}
+.grid3 div:nth-child(2) p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #391400A3;     
+}
+.grid3 div:nth-child(2) {
+    border: 1px solid #F3D1BF;
+    box-shadow: 0px 32px 64px 0px #3914000A;
+    padding: 105px 48px 46px 48px;
+}
+.grid3 div:nth-child(3) {
+    border: 1px solid #F3D1BF;
+    box-shadow: 0px 32px 64px 0px #3914000A;
+    padding: 105px 48px 46px 48px;
+}
+.grid3 div:nth-child(3) {
+    border: 1px solid #F3D1BF;
+    box-shadow: 0px 32px 64px 0px #3914000A;
+}
+.grid3 div:nth-child(3) h4 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #391400;    
+}
+.grid3 div:nth-child(3) p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #391400A3;     
+}
+.grid4 {
+    display: grid;
+    margin-top: 144px;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 6px;
+    border: 0.5px solid #F3D1BF;
+}
+.grid4 div {
+    border: 0.5px solid #F3D1BF;
+    padding: 45px 0 38px 48px;
+}
+.grid4 div h3 {
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+    color: #391400;
+    margin-bottom: 13px;
+}
+.grid4 div p {
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #391400;
+}
+.third {
+    background-color: #28293E;
+    padding-top: 92px;
+    padding-bottom: 592px;
+}
+.back_color {
+    background-color: #FDF0E9;
+}
+.h2_team {
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: white;   
+    padding: 20px 639px 64px 0;
+}
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+}
+.flex2 div div {
+    vertical-align: bottom;
+    align-items: center;
+}
+.flex2 div h4 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #FFFFFF;
+    padding-top: 26px;    
+}
+.flex2 div p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #FFFFFFA3;    
+}
+.kart {
+    border: 1px solid #3A3C56;
+    width: 270px;
+    height: 272px;
+}
+.fourth {
+    margin: -466px 135px;
+    padding: 41px 100.25px 71.25px 100px;
+    background-color: #EF6D58;
+}
+.flex {
+    display: flex;
+}
+.new_h2 {
+    color: white;
+    padding-bottom: 28px;
+}
+.new_p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #FFFFFFA3;  
+    padding-bottom: 34px;  
+}
+.new_button {
+    background: white;
+    border: 1px solid #FFFFFF4B;
+    color: #391400;
+    box-shadow: 0px 3px 9px 0px #39140014;
+}
+.abstr {
+    margin-left: 60px;
+}
+footer {
+    z-index: -1;
+    background-color: #FDF0E9;
+    padding: 197px 0 52px 0;
+    position: relative;
+    margin-top: 368px;
+    padding-bottom: 52px;
+}
+.flex2 h4 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #391400;    
+}
+ul {
+    list-style-type: none;
+}
+.new_h5 {
+    padding-bottom: 16px;
+}
+li {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #391400;    
+}
+.with_bottom {
+    padding-bottom: 68px;
+}
+.line {
+    border-top: 1px solid #F3D1BF;
+}
+.last_flex {
+    display: flex;
+    padding: 43px 0 0 0;
+}
+.last_flex p:nth-child(1) {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #391400A3;  
+    padding-right: 544px;  
+}
+.last_flex p:nth-child(2) {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: right;
+    color: #391400;
+    padding-right: 68px; 
+}
+.last_flex p:nth-child(3) {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: right;
+    color: #391400;    
+}
+.circles {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+.circles div {
+    background-color: #EF6D58;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.circles div img {
+    justify-content: center;
+    align-items: center;
+}
