@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    height: fit-content;
+    background-color:rgb(226, 227, 227);
+    padding: 0;
+}
+li {
+    vertical-align: middle;
+    margin: 15px 10px;
+}
+ul {
+    list-style-type: none;
+}
+.first{
+    justify-content: space-between;
+}
+.second {
+    justify-content: left;
+}
+.third {
+    justify-content: right;
+}
+.fourth {
+    justify-content: center;
+}
+.fifth {
+    flex-direction: column;
+    padding: 15px 10px;
+}
+.fifth li {
+    margin: 0;
+}
+.seventh {
+    justify-content: space-between;
+}
+.seventh ul {
+    display: flex;
+    flex-direction: row;;
+}
+.umnik {
+    margin: 15px 10px;
+    align-self: center;
+}

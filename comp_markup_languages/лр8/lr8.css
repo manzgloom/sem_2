@@ -1,0 +1,168 @@
+.second {
+    display: grid;
+    grid-template: 100px 100px 100px 100px 100px / 50px 100px 20px 300px;
+}
+.div_second {
+    background-color: rgb(174, 115, 230);
+    border: 2px solid blueviolet;
+}
+.third {
+    display: grid;
+    grid-template: repeat(5, 100px) / 50px 100px 20px 300px;
+}
+.fourth {
+    display: grid;
+    height: 400px;
+    grid-template: 25% 100px auto / 40px 50px auto 50px 40px;
+}
+.fifth {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+    height: 300px;
+}
+.sixth1 {
+    display: grid;
+    grid-template-columns: min-content;
+}
+.sixth2 {
+    display: grid;
+    grid-template-columns: max-content;
+}
+.div_sixth {
+    background-color: rgb(174, 115, 230);
+    border: 2px solid blueviolet;
+}
+.seventh {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr) 50px;
+    height: 300px;
+}
+.eighth{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap:5px;
+}
+.eighth div{
+    border: 1px solid black;
+    text-align: center;
+    padding: 100px 0;
+}
+.ninth {
+    display: grid;
+    grid-template-columns: 360px 280px 150px;
+    gap: 0 40px;
+    grid-template-areas: 
+    "img kvartira price"
+    "img address . "
+    "img location . "
+    "img text buttons"
+    "img time . ";
+}
+h3 {
+    grid-area: kvartira;
+}
+img {
+    height: 100%;
+    width: 100%;
+    grid-area: img;
+}
+.address {
+    grid-area: address;
+}
+.location {
+    grid-area: location;
+}
+.text {
+    grid-area: text;
+}
+.time {
+    grid-area: time;
+}
+.price {
+    grid-area: price;
+}
+.ninth div{
+    grid-area: buttons;
+}
+div button {
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 5px;
+}
+.tenth {
+    display: grid;
+    grid-template-rows: [row-first] 50px 50px [row-third]50px;
+    grid-template-columns:repeat(4,50px);
+    gap: 3px;
+    margin: 0;
+}
+.tenth div {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+}
+.ten_A {
+    background-color: rgb(229, 105, 202);
+}
+.ten_B {
+    background-color: rgb(232, 115, 61);
+}
+.ten_C {
+    background-color: rgb(61, 232, 64);
+    grid-row-start:1;
+    grid-column-start: 1;
+}
+.ten_E {
+    background-color: rgb(61, 232, 64);
+    grid-row-start:row-first;
+    grid-row-end: row-third;
+    grid-column-start: 2;
+}
+.ten_I {
+    background-color: rgb(229, 105, 202);
+}
+.ten_J {
+    background-color: rgb(232, 115, 61);
+}
+.tenth_2{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(3,30px);
+    gap:3px
+}
+.tenth_2 div{
+    background-color: rgb(58, 53, 53);
+    border-radius: 3px;
+    text-align: left;
+    color: white;
+    padding: 7px;
+}
+.ten_A2 {
+    grid-column: span 2;
+}
+.ten_B2 {
+    grid-column: span 2;
+}
+.ten_D2 {
+    grid-column: span 3;
+}
+.ten_E2 {
+    grid-column: span 4;
+}
+.eleventh {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 20px);
+    gap: 3px;
+}
+.eleventh :nth-child(7) {
+    grid-column: span 2;
+}
+@media screen and (max-width: 576px){
+    .eleventh {
+        grid-template-rows: repeat(7, 20px);
+        grid-template-columns: repeat(1, 400px);
+    }
+    .eleventh :nth-child(7) {
+        grid-column: 1/2;
+    }
+}
