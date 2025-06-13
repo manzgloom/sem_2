@@ -1,0 +1,30 @@
+color = red
+border = 5px solid blue
+new_border = 5px dotted color
+color_sat = saturate(green, 20%)
+color_dark = darken(orange, 25%)
+color_spin = spin(red, -45)
+
+div_size(w,h=w)
+ width w
+ height h
+
+bigger(a, b)
+ a*b
+
+.first
+ color color
+.border
+ border border
+ div_size 100px
+.new
+ border new_border
+ div_size 20px 50px
+.fourth
+ width bigger(5px, 100px)
+.p1
+ color color_sat
+.p2
+ color color_dark
+.p3
+ color color_spin

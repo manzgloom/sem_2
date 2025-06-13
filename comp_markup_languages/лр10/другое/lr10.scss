@@ -1,0 +1,49 @@
+$text_color: red;
+$border: 5px solid green;
+$width: 200px;
+
+@mixin red() {
+    color: red;
+}
+@mixin blue() {
+    color: blue;
+}
+@mixin green() {
+    color: green;
+}
+@mixin h() {
+    height: 200px;
+}
+@mixin w() {
+    width: 200px;
+}
+
+.first {
+    color: $text_color;
+    border: $border;
+    width: $width; 
+}
+
+.red {
+    @include red();
+}
+.blue {
+    @include blue();
+}
+.green {
+    @include green();
+}
+
+.wh {
+    @include h();
+    @include w(); 
+    border: $border;
+}
+
+@for $i from 1 through 100 
+{
+    .size#{$i}
+    {
+      font-size: #{$i}px;
+    }
+}

@@ -1,0 +1,19 @@
+
+@color: #f34aa2;
+@color-dark: darken(@color, 25%);
+@color-light: lighten(@color, 25%);
+
+div {
+    max-width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    background-color: @color;
+}
+a {
+    text-decoration: none;
+    font-size: 50px;
+    color: @color-dark;
+    &:hover {
+        color: @color-light;
+    }
+}

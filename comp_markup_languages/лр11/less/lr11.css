@@ -1,0 +1,14 @@
+div {
+  max-width: fit-content;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f34aa2;
+}
+a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #b20c62;
+}
+a:hover {
+  color: #fbc2df;
+}

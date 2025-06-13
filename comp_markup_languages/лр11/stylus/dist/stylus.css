@@ -1,0 +1,25 @@
+.first {
+  color: #f00;
+}
+.border {
+  border: 5px solid #00f;
+  width: 100px;
+  height: 100px;
+}
+.new {
+  border: 5px dotted #f00;
+  width: 20px;
+  height: 50px;
+}
+.fourth {
+  width: 500px;
+}
+.p1 {
+  color: #008d00;
+}
+.p2 {
+  color: #bf7c00;
+}
+.p3 {
+  color: #ff00bf;
+}
